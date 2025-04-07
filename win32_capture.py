@@ -38,5 +38,5 @@ if __name__ == "__main__":
     start_time = time.time()
     for _ in range(num_samples):
         capture.get_capture()
-    fps = 1000.0 * (time.time() - start_time) / num_samples
-    print(f"{width}x{height} - {fps:.2f} ms")
+    frame_duration = 1000.0 * (time.time() - start_time) / num_samples
+    print(f"{width}x{height} - {frame_duration:.2f} ms")
